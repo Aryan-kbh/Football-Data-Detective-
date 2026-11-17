@@ -1,0 +1,50 @@
+{
+  "verified_at_utc": "2026-11-16T20:00:44.362893+00:00",
+  "python_version": "3.13.5",
+  "checks": {
+    "pytest": {
+      "passed": true,
+      "exit_code": 0,
+      "log_excerpt": "......................ss.....................................s.......... [ 60%]\n...............................................                          [100%]\n=============================== warnings summary ===============================\ntests/test_v6_adversarial.py::test_possession_outcomes_are_independently_hand_calculated\n  /mnt/data/football-data-detective-v6.1/fdd/tactics.py:75: FutureWarning:\n  \n  The behavior of array concatenation with empty entries is deprecated. In a future version, this will no longer exclude empty items when determining the result dtype. To retain the old behavior, exclude the empty entries before the concat operation.\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n================================ tests coverage ================================\n_______________ coverage: platform linux, python 3.13.5-final-0 ________________\n\nName                Stmts   Miss  Cover\n---------------------------------------\nfdd/__init__.py         1      0   100%\nfdd/analytics.py       85      3    96%\nfdd/config.py          34      0   100%\nfdd/evaluation.py      27      0   100%\nfdd/plots.py           88     11    88%\nfdd/service.py         96      5    95%\nfdd/sources.py         61     20    67%\nfdd/statsbomb.py      111      5    95%\nfdd/storage.py        100      9    91%\nfdd/tactics.py         79      2    97%\nfdd/tracking.py       321     18    94%\nfdd/triage.py          88      1    99%\n---------------------------------------\nTOTAL                1091     74    93%\n=========================== short test summary info ============================\nSKIPPED [1] tests/test_live_sources.py:15: Explicitly opt-in to external network/integration tests\nSKIPPED [1] tests/test_live_sources.py:22: Explicitly opt-in to external network/integration tests\nSKIPPED [1] tests/test_streamlit_smoke.py:6: could not import 'streamlit': No module named 'streamlit'\n116 passed, 3 skipped, 1 warning in 10.50s\n"
+    },
+    "StatsBomb_pipeline": {
+      "passed": true,
+      "events_or_comparisons": 180,
+      "ranked_queue_items": 8,
+      "metrics": 6,
+      "sql": true,
+      "csv": true,
+      "manifest": true,
+      "fixture_is_synthetic": true
+    },
+    "Metrica_pipeline": {
+      "passed": true,
+      "events_or_comparisons": 43,
+      "ranked_queue_items": 3,
+      "metrics": 13,
+      "sql": true,
+      "csv": true,
+      "manifest": true,
+      "fixture_is_synthetic": true
+    },
+    "controlled_mutation_benchmark": {
+      "passed": true,
+      "injected": 35,
+      "exact_rule_detections": 35,
+      "note": "Synthetic errors, not a claim of operational recall"
+    },
+    "standalone_report": {
+      "passed": true,
+      "bytes": 4917828,
+      "note": "HTML generated; browser rendering separately tested"
+    }
+  },
+  "unverified": [
+    "Live public StatsBomb downloads",
+    "Live public Metrica downloads",
+    "Streamlit user-interface interaction",
+    "Real-world QA precision/recall",
+    "Match-video validation"
+  ],
+  "result": "PASS (offline core only)"
+}
