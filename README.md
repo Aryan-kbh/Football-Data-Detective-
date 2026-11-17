@@ -1,4 +1,4 @@
-# Football Data Detective ⚽ | v6.1 (Tracking metadata and cross-feed audit fixes)
+# Football Data Detective ⚽ |  (Tracking metadata and cross-feed audit fixes)
 
 **An explainable football event and tracking-data quality system.** Import a StatsBomb match, reconcile synchronized Metrica events against tracked players and the ball, investigate flagged observations, and export documented SQL/CSV data products.
 
